@@ -22,7 +22,8 @@ public class Person {
         this.age = age;
     }
     public int getAge() {
-        return age;// ...
+        return age;
+        // ...preiod.between
     }
 
     public void printPerson() {
@@ -63,7 +64,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "This Person{" +
                 "name='" + name + '\'' +
                 ", birthday=" + birthday +
                 ", gender=" + gender +

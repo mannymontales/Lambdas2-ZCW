@@ -12,9 +12,9 @@ public class Main implements CheckPerson{
 
     public static void main(String[] args) {
         RosterMania rosterMania = new RosterMania();
-        String name = "";
+        CheckPersonConcrete tester = new CheckPersonConcrete();
 
-        //printPersons(rosterMania, String name);
+        printPersons(rosterMania, tester);
     }
 
     public static void printPersons(List<Person> roster, CheckPerson tester) {
