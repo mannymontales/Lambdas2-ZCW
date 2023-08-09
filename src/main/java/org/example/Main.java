@@ -1,7 +1,32 @@
 package org.example;
 
-public class Main {
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main implements CheckPerson{
+//    public static void main(String[] args) {
+//        System.out.println("Hello world!");
+//    }
+//String name, LocalDate birthday, Person.Sex gender, String emailAddress, Integer age
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        RosterMania rosterMania = new RosterMania();
+        String name = "";
+
+        //printPersons(rosterMania, String name);
+    }
+
+    public static void printPersons(List<Person> roster, CheckPerson tester) {
+        for (Person p : roster) {
+            if (tester.test(p)) {
+                p.printPerson();
+            }
+        }
+    }
+
+    @Override
+    public boolean test(Person p) {
+        return false;
     }
 }
